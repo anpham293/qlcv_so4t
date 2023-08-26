@@ -1,0 +1,45 @@
+
+#Rus solution-----------------------------------------------
+Options -Indexes
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+# Если запрос начинается с /admin, то заменяем на /backend/web/
+RewriteCond %{REQUEST_URI} ^/admin$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^admin\/?(.*) /backend/web/$1
+RewriteCond %{REQUEST_URI} ^/admin/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^admin\/?(.*) /backend/web/$1
+
+# Добавляем другой запрос /frontend/web/$1
+RewriteCond %{REQUEST_URI} !^/(frontend/web|admin)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) /frontend/web/$1
+
+# Если frontend запрос
+RewriteCond %{REQUEST_URI} ^/frontend/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /frontend/web/index.php
+
+
+# Если backend запрос
+RewriteCond %{REQUEST_URI} ^/backend/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /backend/web/index.php
+
+
+<filesMatch "\.(xlsx|docx)$">
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+     Header set Pragma "no-cache"
+     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </ifModule>
+</filesMatch>

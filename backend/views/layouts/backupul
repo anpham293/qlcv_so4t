@@ -1,0 +1,60 @@
+<ul id="side-menu" class="nav">
+                    <li class="user-panel">
+                        <div class="thumb"><img src="<?php echo Yii::$app->urlManager->baseUrl ?>/../images/avatar.jpg" alt="" class="img-circle"/></div>
+                        <div class="info"><p>Vũ Minh Trang</p>
+                            <ul class="list-inline list-unstyled">
+                                <li><a href="extra-profile.html" data-hover="tooltip" title="Profile"><i class="fa fa-user"></i></a></li>
+                                <li><a href="email-inbox.html" data-hover="tooltip" title="Mail"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="#" data-hover="tooltip" title="Setting" data-toggle="modal" data-target="#modal-config"><i class="fa fa-cog"></i></a></li>
+                                <li><a href="extra-signin.html" data-hover="tooltip" title="Logout"><i class="fa fa-sign-out"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="active"><a href="index.html"><i class="fa fa-tachometer fa-fw">
+                                <div class="icon-bg bg-orange"></div>
+                            </i><span class="menu-title">Bảng quản trị</span></a></li>
+                    <li><a href="#"><i class="fa fa-desktop fa-fw">
+                                <div class="icon-bg bg-pink"></div>
+                            </i><span class="menu-title">Quản lý danh mục</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <?php
+                            $files=\yii\helpers\FileHelper::findFiles(Yii::$app->getBasePath()."/controllers",['only'=>['*.php']]);
+
+                            foreach($files as $filename):
+                                $ten = str_replace("Controller.php",'',explode("\\",$filename)[5]);
+                            ?>
+                            <li><a href="<?php echo Yii::$app->urlManager->createUrl(strtolower($ten)); ?>"><i class="fa fa-group"></i><span class="submenu-title"><?php echo $ten?></span></a></li>
+                            <?php endforeach;?>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-send-o fa-fw">
+                                <div class="icon-bg bg-green"></div>
+                            </i><span class="menu-title">Quản lý lịch sử chat</span></a>
+                        <ul class="nav nav-second-level">
+
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-edit fa-fw">
+                                <div class="icon-bg bg-violet"></div>
+                            </i><span class="menu-title">Quản lý tư vấn</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="#"><i class="fa fa-th-large"></i><span class="submenu-title">Bộ phận tư vấn</span><span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li><a href="grid-layout-div.html"><i class="fa fa-angle-right"></i><span class="submenu-title">Bộ phận tư vấn iphone</span></a></li>
+                                    <li><a href="grid-layout-div.html"><i class="fa fa-angle-right"></i><span class="submenu-title">Bộ phận tư vấn Android</span></a></li>
+                                    <li><a href="grid-layout-div.html"><i class="fa fa-angle-right"></i><span class="submenu-title">Bộ phận tư vấn Laptop</span></a></li>
+                                    <li><a href="grid-layout-div.html"><i class="fa fa-angle-right"></i><span class="submenu-title">Bộ phận tư vấn Máy ảnh</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fa fa-tencent-weibo"></i><span class="submenu-title">Nhân viên tư vấn</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-th-list fa-fw">
+                                <div class="icon-bg bg-blue"></div>
+                            </i><span class="menu-title">Thống kê</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                        </ul>
+                </ul>

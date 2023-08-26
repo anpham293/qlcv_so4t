@@ -1,0 +1,346 @@
+.kv-grouped-row{
+    background: #f5f5f5 !important;
+}
+.page-container-bg-solid .page-content {
+    background-color: white !important;
+}
+
+.page-bar {
+    background-color: rgb(247, 247, 247) !important;
+    text-transform: capitalize;
+}
+
+.page-bar .fa {
+    font-size: 20px !important;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.home-change {
+    font-size: 20px !important;
+    text-decoration: none !important;
+    line-height: 30px !important;
+    transition: all 0.3s;
+}
+.hott-change {
+    font-size: 20px !important;
+    text-decoration: none !important;
+    line-height: 30px !important;
+    transition: all 0.3s;
+}
+
+.new-change {
+    font-size: 20px !important;
+    text-decoration: none !important;
+    line-height: 30px !important;
+    transition: all 0.3s;
+}
+
+.home-change:hover, .active-change:hover,.hott-change:hover,.new-change:hover {
+    font-size: 25px !important;
+}
+
+.active-change {
+    font-size: 20px !important;
+    text-decoration: none !important;
+    line-height: 30px !important;
+    transition: all 0.3s;
+}
+#anh-img{
+    width: 100%;
+}
+.panel td {
+    vertical-align: middle !important;
+}
+
+.panel th {
+    vertical-align: middle !important;
+}
+
+.skip-export.kv-align-center.kv-align-middle a:nth-child(1) {
+    color: #000000 !important;
+}
+
+.skip-export.kv-align-center.kv-align-middle a:nth-child(2) {
+    color: #0078ff !important;
+}
+
+.skip-export.kv-align-center.kv-align-middle a:nth-child(3) {
+    color: #ff0c00 !important;
+}
+
+textarea {
+    resize: vertical !important;
+}
+
+.tab-seo {
+    color: #fff;
+    font-size: 18px;
+    background: #488c6c;
+    border-color: #488c6c;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px 5px !important;
+}
+
+.seo-content {
+    display: none;
+
+}
+
+.krajee-default.file-preview-frame {
+    box-shadow: none !important;
+}
+
+.image-dele {
+    position: relative;
+    float: left;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background: #dad9d9;
+}
+
+.close-img-dele {
+    color: red;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: rgba(255, 255, 255, .9);
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image-dele img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.label-default-img input {
+
+    margin: 0 !important;
+
+    margin-left: 5px !important;
+
+    margin-right: 3px !important;
+}
+
+.label-default-img strong {
+    font-weight: normal;
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+.label-default-img {
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    margin: 0;
+}
+
+.product-img {
+    float: left;
+    width: 102px;
+    margin: 10px;
+    border: 1px solid rgba(193, 75, 75, 0.51);
+    margin-left: 0;
+}
+
+.home-check {
+    display: flex;
+    align-items: center;
+}
+
+.home-check em {
+
+    color: #999;
+
+    margin-top: 3px;
+}
+
+.home-check > div {
+    margin: 0 !important;
+    margin-right: 8px !important;
+    margin-top: 9px !important;
+}
+
+.home-check input {
+    margin-right: 5px !important;
+    margin-top: 2px !important;
+}
+.d-check-box{
+    margin-bottom: 20px;
+}
+
+.home-check label {
+    display: flex;
+}
+
+.content-form label{
+    color: #4B77BE !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+}
+
+.D-imageboxform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: #F3F3F3;
+    margin: 10px 0 10px 0;
+}
+
+.D-imageform{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.xemwebsite{
+    padding-bottom: 15px !important;
+    padding-top: 10px !important;
+}
+
+.xemwebsite:hover,.xemwebsite:focus{
+    background-color: #3f4f62 !important;
+}
+#btn-luu{
+position: fixed;
+right: 35px;
+top: 100px;
+z-index: 999;
+}
+
+.nav-tabs>li>a {
+    color: #000;
+    background-color: #eee;
+}
+
+.dd3-content:hover {
+    color: #e04e80 !important;
+    font-weight: bold !important;
+    background: rgb(216, 224, 223) !important;
+}
+
+div.kv-expand-header-icon .glyphicon, div.kv-expand-icon.crud-datatable .glyphicon{
+    font-size: 18px;
+}
+
+form div.required label.control-label:before {
+    content:" * ";
+    color:red;
+}
+
+.form-header {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 17px;
+    border-bottom: 3px solid #2a73d8;
+    margin: 0;
+}
+
+.form-header .form-txt {
+    background-color: #2a73d8;
+    display: inline-block;
+    padding: 6px 14px;
+}
+
+
+.account-detail{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #f6f6f6;
+    margin-bottom: 25px;
+}
+
+.account-detail{
+    padding-right: 45px;
+}
+
+.account-detail .control-label{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bg-warning {
+    width: 100%;
+    float: right;
+    padding: 7px;
+    border: 1px solid #e6ce79;
+    margin-top: 5px;
+    background-color: #fcf8e3;
+}
+
+.account-field-content{
+    width: 100%;
+    display: inline-block;
+    line-height: 34px;
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+.user-profile-content{
+    margin-bottom: 20px;
+}
+
+.profile-account{
+    min-height:600px;
+    padding: 25px 40px 10px 0;
+    background-color: #f7f7f7;
+}
+
+.updateanhdiv{
+    display: block;
+    border: 1px solid orange;
+    position: absolute;
+    top: 0;
+    height: 450px;
+}
+.divanhtam{
+    line-height: 450px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+}
+.divanhtam .anhchinh{
+    height: 100%;
+    transition: all 0.3s;
+}
+.divanhtam .updateanhdiv{
+
+    transition: all 0.5s;
+    opacity: 0;
+}
+.divanhtam:hover .updateanhdiv{
+
+    opacity: 1;
+}
+.divanhtam:hover .anhchinh{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.updateanhdiv .updateanhs{
+    width: 30%;
+    display: inline-block;
+}
+
+.page-break{page-break-after: always;}#tablenguoibenh th{text-align: left;width: 100px!important;}
